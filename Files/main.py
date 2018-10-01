@@ -1,0 +1,6 @@
+fp = open("data/text.txt", "r+")
+print(fp.read())
+line=input("Type in some text: ")
+fp.write(line)
+fp.write("\n")
+fp.close()
