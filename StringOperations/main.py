@@ -22,6 +22,7 @@ print("\n\n\n")
 
 print("Hello" < "hello")
 print("z" > "abcdefg")
+print("a" >= "aa")
 
 print("\n\n\n")
 
@@ -36,3 +37,4 @@ while True:
         print(s[start:])
         break
     print(s[start:end])
+    break
