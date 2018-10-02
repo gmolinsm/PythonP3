@@ -27,14 +27,16 @@ print("a" >= "aa")
 print("\n\n\n")
 
 s = "http://google.com and then http://yahoo.com or even http://bbc.co.uk"
+print(s.find(":"))
 start = 0
+end = 0
 while True:
     start = s.find("http://", start)
     if start == -1:
         break
     end = s.find(" ", start)
-    if end == -1:
-        print(s[start:])
-        break
     print(s[start:end])
-    break
+    if end == -1:
+        break
+    start = end
+
